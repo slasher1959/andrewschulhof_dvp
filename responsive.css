@@ -1,8 +1,17 @@
 /* Responsive section - 800px breakpoint, display size of 768px fixed */
 @media only screen and (max-width: 799px) {
     /* reset container and columns for 768px size */
-    body {
+    html, body {
         min-width: 768px;
+    }
+    nav.primary {
+    width: 768px;
+    }
+    .sf-menu li a {
+    width: 150px;
+    }
+    #main {
+        width: 768px;
     }
     .container_12 {
         width: 768px;

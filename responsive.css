@@ -6,6 +6,13 @@
     }
     nav.primary {
     width: 768px;
+    display: none;
+    }
+    #widget-header {
+        right: 20px;
+    }
+    div#widget-header .embed-content p:after {
+        content: 'test';
     }
     .sf-menu li a {
     width: 150px;

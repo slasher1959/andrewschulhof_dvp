@@ -1,3 +1,9 @@
+@media only screen and (min-width: 800px) {
+    nav.mobile-primary {
+    display: none;
+    }
+}
+
 /* Responsive section - 800px breakpoint, display size of 768px fixed */
 @media only screen and (max-width: 799px) {
     /* reset container and columns for 768px size */
@@ -11,9 +17,21 @@
     #widget-header {
         right: 20px;
     }
-    div#widget-header .embed-content p:after {
-        content: 'test';
+    #ac-mobile-menu   {
+        display: none;
     }
+/*
+        div#widget-header .embed-content a:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-family: 'fontawesome';
+        font-size: 26px;
+        font-size: 2.0rem;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        content: '\f0c9';
+        display: inline-block;
+    }
+*/
     .sf-menu li a {
     width: 150px;
     }

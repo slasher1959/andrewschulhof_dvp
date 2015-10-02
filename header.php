@@ -211,6 +211,26 @@
                        ));
                      ?>
                   </nav><!--.primary-->
+				  
+				  <nav class="mobile-primary">
+					<div class="wrapper ">
+					<div id="ac-mobile-menu-button">
+					<i class="fa fa-bars fa-lg"></i>
+					</div>';
+					<div id="ac-mobile-menu">
+
+							<?php wp_nav_menu( array(
+								'container'       => 'ul', 
+								'menu_class'      => 'sf-menu', 
+								'menu_id'         => 'mobile-topnav',
+								'depth'           => 0,
+								'theme_location' => 'header_menu' 
+							));
+							?>
+							
+                  </nav><!--.mobile-primary-->
+				  
+				  
       			
             </div>
          </div><!--.container-->

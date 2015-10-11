@@ -40,13 +40,18 @@
   <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <!-- JME-2015-Sept-Mod - Added following two stylesheet entries for responsive adaptation  -->
   <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.3.1' type='text/css' />
-  <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/responsive.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/css/responsive.css" />
 <?php 
  if( is_front_page() ) {
     add_action('wp_enqueue_scripts', 'ca_scripts_init');
     add_action('wp_enqueue_scripts', 'ca_styles_init');
+// JME-2015 Added below so always done even if not front page...for responsbile
+//} else {
+//    add-action('wp_enqueue_scripts', 'ca_scripts_init');
+//    add_action('wp_enqueue_scripts', 'ca_styles_init');
  }
- ?> 
+ ?>
+
  	<?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
@@ -215,13 +220,17 @@
 				  <nav class="mobile-primary">
 					<div class="wrapper ">
 					<div id="ac-mobile-menu-button">
-					<i class="fa fa-bars fa-lg"></i>
-					</div>';
+                                            <button id="mobile-menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                                                <span id="mob-button-icon-hamburger"><i class="fa fa-bars fa-lg mobile-menu-is-closed the-active-mob-menu-icon"></i></span>
+                                                <span id="mob-button-icon-anex"><i class="fa fa-times fa-lg mobile-menu-is-open"></i></span>
+                                            </button>
+                                        </div>
 					<div id="ac-mobile-menu">
 
 							<?php wp_nav_menu( array(
-								'container'       => 'ul', 
-								'menu_class'      => 'sf-menu', 
+								'container'       => 'ul',
+//    commented the Super Fish Menu out to stop it's effects for Mobile menu                                                        
+//								'menu_class'      => 'sf-menu', 
 								'menu_id'         => 'mobile-topnav',
 								'depth'           => 0,
 								'theme_location' => 'header_menu' 

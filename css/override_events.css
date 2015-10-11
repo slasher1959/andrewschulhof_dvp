@@ -1,0 +1,13 @@
+/* override events.css */
+.tribe-events-events .tribe-events-event-list-meta {
+  border: 1px solid #ccc;
+  padding: 1% 0 1% 4%;
+  background-color: white;
+}
+
+h4.event-day {
+  color: #888;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}

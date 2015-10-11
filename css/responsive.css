@@ -1,0 +1,255 @@
+@media only screen and (min-width: 800px) {
+    nav.mobile-primary {
+    display: none;
+    }
+}
+
+/* Responsive section - 800px breakpoint, display size of 768px fixed */
+@media only screen and (max-width: 799px) {
+    /* reset container and columns for 768px size */
+    html, body {
+        min-width: 768px;
+    }
+    nav.primary {
+    width: 768px;
+    display: none;
+    }
+    #widget-header {
+        right: 40px;
+    }
+    .mobile-primary {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    z-index: 1;
+    }
+/*     this is the mobile menu that can be toggled on and off */
+    #mobile-menu-toggle {
+       position: absolute;
+       right: 0px;
+       background: rgb(153, 153, 153) none repeat scroll 0% 0%;
+       padding: 5px 10px 5px 8px;
+       border: none;
+    }
+    #mobile-menu-toggle span {
+/*         right: 0px;
+        position: absolute; */
+        font-size: 1.5em;
+        color: #E8E8E8;
+     }
+    #mobile-menu-toggle .fa {
+        display: none;
+    }
+    #mobile-menu-toggle .fa.the-active-mob-menu-icon {
+        display: inline-block;
+    }
+/*     default for the mobile menu is to not display */
+    #mobile-topnav {
+        display: none;
+    }
+/*     class will be added to display menu using jquery */
+    #mobile-topnav.mobile-topnav-display-on   {
+        display: block;
+    }
+    .fa-times {
+        padding-left: 2px;
+    }
+    #ac-mobile-menu   {
+/*        display: none;  */
+        width: 222px;
+        position: absolute;
+        right: 0px;
+        top: 33px;
+        background-color: rgb(153, 153, 153);
+    }
+
+    #ac-mobile-menu li   {
+        text-decoration: none;
+        list-style-type: none;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+    #ac-mobile-menu a {
+        text-decoration: none;
+        color: rgb(232, 232, 232);
+        font-size: 1.5em;
+        padding: 4px;
+    }
+    #ac-mobile-menu .sub-menu a {
+        font-size: 1.3em;
+    }
+    #mobile-topnav > li {
+        border-bottom: 1px solid #E8e8e8;
+    }
+    #mobile-topnav li:last-of-type {
+        border-bottom: none;
+    }
+/*
+        div#widget-header .embed-content a:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        font-family: 'fontawesome';
+        font-size: 26px;
+        font-size: 2.0rem;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        content: '\f0c9';
+        display: inline-block;
+    }
+*/
+    .sf-menu li a {
+    width: 150px;
+    }
+    #main {
+        width: 768px;
+    }
+    .container_12 {
+        width: 768px;
+    }
+    .container_12 .grid_1 {
+	width:44px;
+    }
+    .container_12 .grid_2 {
+        width:108px;
+    }
+    .container_12 .grid_3 {
+        width:172px;
+    }
+    .container_12 .grid_4 {
+        width:236px;
+    }
+    .container_12 .grid_5 {
+        width:300px;
+    }
+    .container_12 .grid_6 {
+        width:364px;
+    }
+    .container_12 .grid_7 {
+        width:428px;
+    }
+    .container_12 .grid_8 {
+        width:492px;
+    }
+    .container_12 .grid_9 {
+        width:556px;
+    }
+    .container_12 .grid_10 {
+        width:620px;
+    }
+    .container_12 .grid_11 {
+        width:684px;
+    }
+    .container_12 .grid_12 {
+        width:748px;
+    }
+/* only for testing TO-BE-REMOVED */
+/*     .container_12 .grid_12 {
+        background-color: yellow;
+    } */
+}
+
+/* Responsive section phone size - 500px breakpoint, display size of 480px fixed */
+@media only screen and (max-width: 500px) {
+    html, body {
+        width: 480px;
+        min-width: 480px;
+    }
+    #main {
+        width: 480px;
+    }
+    .container_12 {
+        width: 480px;
+    }
+    .container_12 .grid_4, .container_12 .grid_2   {
+        width: 440px;
+    }
+    .alpha   {
+        margin: 10px;
+    }
+/*     .container_12 .grid_1 {
+	      width:20px;
+    }
+    .container_12 .grid_2 {
+        width:60px;
+    }
+    .container_12 .grid_3 {
+        width:100px;
+    }
+    .container_12 .grid_4 {
+        width:140px;
+    }
+    .container_12 .grid_5 {
+        width:180px;
+    }
+    .container_12 .grid_6 {
+        width:220px;
+    }
+    .container_12 .grid_7 {
+        width:260px;
+    }
+    .container_12 .grid_8 {
+        width:300px;
+    }
+    .container_12 .grid_9 {
+        width:340px;
+    }
+    .container_12 .grid_10 {
+        width:380px;
+    }
+    .container_12 .grid_11 {
+        width:420px;
+    } */
+    .container_12 .grid_12 {
+        width: 480px;
+    } 
+/* only for testing TO-BE-REMOVED */
+/*     .container_12 .grid_12 {
+        background-color: lightblue;
+    } */
+    .logo, .logo a, .logo img   {
+        width: 230px;
+    }
+    .hm-carousel {
+        display: none;
+    }
+    #embed_page-2 {
+/*         temporary non display for testing */
+/*         display: none; */
+/*         position: fixed;
+        bottom: 0px;
+        right: 40px */
+    }
+    .mobile-primary {
+/*         temporary non display for testing */
+/*         display: none; */
+/*         position: fixed;
+        bottom: 0px;
+        right: 20px;
+        z-index: 1; */
+    }
+    #widget-header {
+        right: 40px;
+    }
+    #widget-header span {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+    #footer .textwidget > img {
+        display: none;
+    }
+    #footer .textwidget div {
+        text-align: center;
+    }
+    #social_networks-2, #text-11 {
+        float: left;
+    }
+    #social_networks-2 h4 {
+        display: none;
+    }
+    .social-networks li {
+        display: inline-block;
+    }
+    ul.social-networks li   {
+       width: 110px !important;;
+       float: left;
+    }
+}

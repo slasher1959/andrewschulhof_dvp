@@ -19,6 +19,8 @@
 		echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 	} ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<!-- JME-2015-Sept-Mod - Added below for responsive -->
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
